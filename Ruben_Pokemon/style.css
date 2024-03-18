@@ -1,0 +1,185 @@
+body {
+	background-image: url(imagenes/fondo2.jpg_large.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	background-color: #f3f3f3;
+}
+
+header {
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+	width: 100%;
+	height: 350px;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: 30%;
+	background-image: url(imagenes/logo-pokemon.png);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-end;
+	margin-bottom: 20px;
+}
+
+nav {
+	background-color: rgba(255, 0, 0, 0.5);
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+	color: #fff;
+	padding: 20px 0;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	display: inline;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px 20px;
+	border: 2px solid transparent;
+	border-radius: 5px;
+	transition: all 0.3s;
+}
+
+nav ul li a:hover {
+	background-color: #555;
+	border-color: #fff;
+}
+
+.dropdown {
+	display: none;
+	position: absolute;
+	background-color: #333;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.dropdown li {
+	padding: 10px;
+	text-align: center;
+}
+
+.dropdown li a {
+	color: #fff;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown li a:hover {
+	background-color: #555;
+}
+
+nav ul li:hover .dropdown {
+	display: block;
+}
+
+.banners-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 40px;
+}
+
+.banners {
+	display: flex;
+}
+
+.banner {
+	width: 400px;
+	height: 450px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+	margin-right: 60px;
+	transition: box-shadow 0.3s;
+}
+
+.banner:last-child {
+	margin-right: 0;
+}
+
+.banner:hover {
+	box-shadow: 0 8px 16px 50px rgba(0, 0, 0, 0.5);
+	transform: scale(1.15);
+}
+
+.banner img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.banner .info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	padding: 20px;
+	opacity: 0;
+	transition: opacity 0.3s;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.banner:hover .info {
+	opacity: 1;
+}
+
+.banner .info h2 {
+	margin-top: 0;
+}
+
+.banner .info p {
+	margin-bottom: 0;
+}
+
+.banner.fire .info {
+	background-color: rgba(255, 0, 0, 0.7);
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+}
+
+.banner.grass .info {
+	background-color: rgba(76, 175, 80, 0.7);
+	box-shadow: 0 0 25px 35px#ffffff;
+}
+
+.banner.water .info {
+	background-color: rgba(52, 152, 219, 0.7);
+	box-shadow: 0 0 25px rgba(52, 152, 219, 0.5);
+}
+
+.transparent-box {
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 20px;
+	margin: 40px auto;
+	max-width: 600px;
+	border-radius: 10px;
+	box-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+}
+
+.transparent-box h2 {
+	margin-top: 0;
+}
+
+.transparent-box p {
+	margin-bottom: 0;
+}

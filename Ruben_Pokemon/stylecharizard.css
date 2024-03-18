@@ -1,0 +1,129 @@
+/* stylecharizard.css */
+
+body {
+    background-image: url(imagenes/fondo2.jpg_large);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-image: url(imagenes/logo-pokemon.png);
+    background-size: 200px; /* Tamaño del logo */
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px; /* Altura del encabezado */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #555;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown li {
+    text-align: center;
+}
+
+.dropdown li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.dropdown li a:hover {
+    background-color: #555;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Alinea los elementos arriba */
+    margin-bottom: 40px;
+}
+
+.card {
+    width: 300px; /* Ancho de la carta */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.info {
+    background-color: rgba(255, 165, 0, 0.5); /* Naranja con un poco de opacidad */
+    color: #fff;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.8); /* Sombreado naranja */
+}
+
+.card:hover .info {
+    opacity: 1;
+}
+
+h2, p {
+    margin-top: 0;
+    font-size: 20px; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio entre el título y el párrafo */
+    text-shadow: 1px 1px 2px rgba(255, 165, 0, 0.8); /* Sombra de texto naranja */
+}
