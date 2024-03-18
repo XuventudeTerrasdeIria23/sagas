@@ -1,0 +1,81 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 14px;
+	font-family: "Patrick Hand", cursive;
+	text-align: left;
+}
+
+body {
+	width: 50%;
+	margin: 0 auto;
+	background: #000 url(imagen13.jpg) no-repeat center/95%;
+}
+
+section {
+	width: 80%;
+	margin: 1em auto;
+	padding: .2em;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	border-radius: .5em;
+	background: #ffffff80;
+	-webkit-backdrop-filter: blur(8px);
+	backdrop-filter: blur(8px);
+	box-shadow: 3px 3px 5px 5px #cccccc80;
+
+}
+
+h1 {
+	width: 100%;
+	margin: 0px 0px 1em 0px;
+	padding: 0em;
+	font-weight: bold;
+	font-size: 3em;
+	text-align: center;
+	text-shadow: 2px 2px 2px #666666CC;
+	letter-spacing: .1em;
+	background: #ffffff80;
+	border-radius: .1em;
+	box-shadow: 3px 3px 5px 5px maroon;
+}
+
+ul {
+	list-style-type: none;
+	width: 100%;
+	padding: 1em;
+	/*			background: #ffffff80;*/
+}
+
+li {
+	/*			font-weight: bold;*/
+	font-family: monospace;
+	padding: .2%;
+	text-align: center;
+	font-size: 1.2em;
+}
+
+li:hover {
+	background: #ffffff;
+	border-radius: .5em;
+	box-shadow: 2px 2px 15px 2px #ed9f0780;
+}
+
+a {
+	color: maroon;
+	font-size: 1.2em;
+	text-decoration: none;
+	border-radius: .5em;
+	font-size: 1.7em;
+}
+
+a:hover {
+	color: #ed9f07;
+	font-size: 1.7em;
+	text-decoration: none;
+	border-radius: .5em;
+}
